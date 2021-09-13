@@ -1,6 +1,6 @@
 # Gear for Rustaceans
 
-[![Publish Status](https://github.com/gear-tech/gear.rs/workflows/Publish/badge.svg)](https://github.com/gear-tech/gear.rs/workflows/publish.yml?query=branch%3Amaster)
+[![Publish Status](https://github.com/gear-tech/gear.rs/workflows/Publish/badge.svg)](https://github.com/gear-tech/gear.rs/actions/workflows/publish.yml?query=branch%3Amaster)
 
 Gear projects navigator for Rust developers.
 
