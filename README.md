@@ -1,6 +1,6 @@
 # Gear for Rustaceans
 
-[![Publish Status](https://github.com/gear-tech/gear.rs/workflows/Publish/badge.svg)](https://github.com/gear-tech/gear.rs/actions/workflows/publish.yml?query=branch%3Amaster)
+[![Publish Status](https://github.com/gear-tech/gear-tech.github.io/workflows/Publish/badge.svg)](https://github.com/gear-tech/gear.rs/actions/workflows/publish.yml?query=branch%3Amaster)
 
 Gear projects navigator for Rust developers.
 
@@ -13,8 +13,8 @@ Gear projects navigator for Rust developers.
 1. Clone:
 
     ```bash
-    git clone https://github.com/gear-tech/gear.rs.git
-    cd gear.rs
+    git clone https://github.com/gear-tech/gear-tech.github.io.git
+    cd gear-tech.github.io
     ```
 
 2. Install [mdBook](https://github.com/rust-lang/mdBook):
