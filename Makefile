@@ -4,7 +4,7 @@ all:
 	@mdbook build
 
 prepare:
-	@cargo install mdbook --vers "0.4.12"
+	@cargo install mdbook --vers "0.4.35"
 
 serve:
 	@mdbook serve
