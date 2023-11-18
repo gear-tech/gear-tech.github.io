@@ -4,4 +4,4 @@
 
 # Tips and Tricks
 
-- [Using `sccache` with AWS S3](sccache.md)
+- [Accelerate the node building](accelerate-build.md)

@@ -1,4 +1,6 @@
-# Using `sccache` with AWS S3
+# Accelerate the Gear node building
+
+## Using `sccache`
 
 Using `sccache` configured with AWS S3 allows decreasing build time.
 
@@ -49,6 +51,39 @@ RUSTC_WRAPPER=sccache CARGO_INCREMENTAL=0 cargo b
 RUSTC_WRAPPER=sccache CARGO_INCREMENTAL=0 cargo b -r
 ```
 
+## Using `mold/sold`
+
+`mold` is the linker that uses multiple CPU cores when linking.
+
+## Install `mold/sold`
+
+### macOS
+
+As `mold` doesn't support macOS we need to build `sold` manually.
+
+```bash
+git clone git@github.com:bluewhalesystems/sold.git
+mkdir sold/build
+cd ./sold/build
+# if you don't have cmake, please run:
+# brew install cmake
+cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_CXX_COMPILER=c++ ..
+cmake --build . -j $(sysctl -n hw.ncpu)
+sudo cmake --build . --target install
+```
+
+## Configure `cargo` to use `mold/sold`
+
+To use `mold/sold` with Rust, create (or update) `.cargo/config.toml` at your home directory with the following:
+
+```toml
+# macOS on M-series:
+[target.aarch64-apple-darwin]
+rustflags = ["-C", "link-arg=--ld-path=/usr/local/bin/ld64.sold"]
+```
+
+Then just run `cargo b [-r]` as usually.
+
 ## Measurements
 
 We will measure the build time on the [v1.0.1](https://github.com/gear-tech/gear/releases/tag/v1.0.1) tag of the `gear` repository:
@@ -63,10 +98,10 @@ cargo fetch
 
 ### macOS / M2 / 8 cores
 
-- Debug build without `sccache`: ?m ??s
-- Release build without `sccache`: ?m ??s
-- Debug build with `sccache`: **?m ??s**
-- Release build with `sccache`: **?m ??s**
+- Debug build without `sccache`: 4m 09s
+- Release build without `sccache`: 6m 12s
+- Debug build with `sccache`: **4m 47s**
+- Release build with `sccache`: **4m 26s**
 
 ### macOS / M3 Pro / 12 cores
 
