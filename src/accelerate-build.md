@@ -98,14 +98,14 @@ cargo fetch
 
 ### macOS / M2 / 8 cores
 
-- Debug build without `sccache`: 4m 09s
-- Release build without `sccache`: 6m 12s
-- Debug build with `sccache`: **4m 47s**
-- Release build with `sccache`: **4m 26s**
+- Debug profile by defaul: 4m 09s
+- Release profile by defaul: 6m 12s
+- Debug profile with `sccache`: **4m 47s**
+- Release profile with `sccache`: **4m 26s**
 
 ### macOS / M3 Pro / 12 cores
 
-- Debug build without `sccache`: 2m 35s
-- Release build without `sccache`: 3m 39s
-- Debug build with `sccache`: **4m 36s**
-- Release build with `sccache`: **3m 47s**
+- Debug profile by default: 2m 35s
+- Release profile by defaul: 3m 39s
+- Debug profile with `sccache`: **4m 36s**
+- Release profile with `sccache`: **3m 47s**
