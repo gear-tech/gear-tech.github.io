@@ -98,14 +98,14 @@ cargo fetch
 
 ### macOS / M2 / 8 cores
 
-- Debug profile by defaul: 4m 09s
-- Release profile by defaul: 6m 12s
+- Debug profile by default: 4m 09s
+- Release profile by default: 6m 12s
 - Debug profile with `sccache`: **4m 47s**
 - Release profile with `sccache`: **4m 26s**
 
 ### macOS / M3 Pro / 12 cores
 
 - Debug profile by default: 2m 35s
-- Release profile by defaul: 3m 39s
+- Release profile by default: 3m 39s
 - Debug profile with `sccache`: **4m 36s**
 - Release profile with `sccache`: **3m 47s**
