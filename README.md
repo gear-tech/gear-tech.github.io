@@ -4,7 +4,7 @@
 
 Gear projects navigator for Rust developers.
 
-👉 https://gear.rs
+⚙️🦀 https://gear.rs
 
 ## Build Locally
 
