@@ -93,7 +93,8 @@ The example below is for macOS:
     ```bash
     cargo b -rp librocksdb-sys
     ```
-- Find `librocksdb.a` in the target directory:
+
+- Find the `librocksdb.a` file in the `target` directory:
 
     ```bash
     find target -name librocksdb.a
@@ -121,7 +122,7 @@ The example below is for macOS:
     export CARGO_TARGET_AARCH64_APPLE_DARWIN_RUSTFLAGS="-Clink-arg=-L/opt/homebrew/opt/bzip2/lib -Clink-arg=-lbz2"
     ```
 
-- Now the `librocksdb-sys` crate building will be mush faster.
+Now the `librocksdb-sys` crate building will be mush faster.
 
 ## Avoid rebuilding examples before pallet tests
 
