@@ -4,3 +4,7 @@ authors = ["Gear Technologies"]
 
 [output.html]
 git-repository-url = "https://github.com/gear-tech/gear-tech.github.io"
+additional-js = ["js/mermaid.min.js", "js/mermaid-init.js"]
+
+[preprocessor]
+mermaid = { command = "mdbook-mermaid" }

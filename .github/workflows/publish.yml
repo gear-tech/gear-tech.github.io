@@ -21,10 +21,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Setup mdBook
-        uses: peaceiris/actions-mdbook@v1
+      - uses: taiki-e/install-action@v2
         with:
-          mdbook-version: "0.4.35"
+          tool: mdbook,mdbook-mermaid
 
       - name: Build docs
         run: mdbook build
