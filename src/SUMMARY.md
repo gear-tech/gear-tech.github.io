@@ -6,8 +6,9 @@
 
 - [Architechture overview](gear-protocol/architechture-overview.md)
 - [Block production](gear-protocol/block-production.md)
-- [Gas tree](gear-protocol/gas-tree.md)
+- [Wasm code instrumentation](gear-protocol/wasm-instrumentation.md)
 - [Wasm executors](gear-protocol/wasm-executors.md)
+- [Gas tree](gear-protocol/gas-tree.md)
 - [Lazy pages](gear-protocol/lazy-pages.md)
 - [Benchmarking](gear-protocol/benchmarking.md)
 
