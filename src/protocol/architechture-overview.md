@@ -1,6 +1,5 @@
 # Architechture overview
 
-
 ```mermaid
 flowchart TB
     gear-cli-->vara-runtime
@@ -16,7 +15,6 @@ flowchart TB
         pallet-gear-staking-rewards
         pallet-gear-voucher
     end
-
 ```
 
 🚧 *To be added soon.*
